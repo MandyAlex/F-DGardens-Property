@@ -1,0 +1,193 @@
+/* .formContainer */
+section.section.Two {
+	font-family: "Raleway";
+	/* color: #fff; */
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
+	background: #7ec5aa;
+	background: linear-gradient(to top left, #7ec5aa, #b0e2cf);
+	opacity: 0.65;
+}
+
+#contactForm {
+	font-size: 100%;
+	border-radius: 10px;
+}
+
+#contactForm * {
+	color: #2e3433;
+}
+
+h1,
+.formText {
+	padding: 0.5rem;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #ece5ea;
+	/*font-size: 1.8rem;*/
+	text-align: center;
+	margin: 0 auto;
+}
+
+form h1 {
+	padding: 0;
+}
+
+#contactForm h4 {
+	color: #2e3433;
+	font-weight: bold;
+	padding: 0.5em 2em;
+}
+
+form p.mainText {
+	font-size: 0.8rem;
+	color: #ece5ea;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.formText {
+	font-size: 0.7rem;
+}
+
+label {
+	font-family: "Raleway";
+	font-weight: bold;
+	padding: 0.3rem 0 0.3em 0.5em;
+}
+
+.ageConfirm label,
+.leavemsgConfirm label {
+	font-size: 0.8rem;
+}
+
+input {
+	min-height: 1rem;
+}
+
+::placeholder,
+input[type="text"] {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	background: #ece5ea;
+	padding: 5px;
+	margin: 0;
+	min-height: 3ch;
+	border-radius: 3px;
+	border: none;
+	resize: vertical;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #2e3433;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #2e3433;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #2e3433;
+	padding-left: 1rem;
+}
+
+.success {
+	color: red; /* #ff9966;*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*  GRID BEGINS */
+@supports (display: grid) {
+	form.formContainer {
+		/* display: grid;
+		grid-template-columns: [label] minmax(100px, auto) [controls] 1fr;
+		grid-template-rows: repeat(6, auto) 5ch 1fr;
+		grid-row: auto;
+		grid-gap: 0.5rem 0.7rem; */
+	}
+
+	/* form h1 {
+		grid-column: 1 / -1;
+		grid-row: 1;
+	}
+
+	form h4 {
+		grid-column: 1/-1;
+		margin: 0;
+	}
+
+	form > label {
+		grid-column: label;
+		grid-row: auto;
+		align-self: center;
+	}
+
+	form > input[type="text"] {
+		grid-column: controls;
+		grid-row: auto;
+	}
+
+	form textarea {
+		grid-column: controls;
+	}
+
+	.error {
+		grid-column: 2;
+		grid-row: auto;
+	} */
+
+	.success{
+		color: red;
+		text-align: center;
+		font-size: 14px;  
+		/* grid-column: 1/-1;
+		grid-row: [last];
+		padding: 0.8em; */
+	}
+
+	.submit{
+		margin: 0 auto;
+	}
+
+	/* a.new-button {
+		/* background: #0074D9; */
+	/* background: rgba(18, 111, 78, 0.75);
+		text-align: center;
+		display: inline-block;
+		margin: 0.5rem auto;
+		text-decoration: none;
+		font-size: 12px;
+		color: #fff;
+		padding: 0.5em 1em;
+		letter-spacing: 0.05em;
+		border-radius: 3px;
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+	} */
+
+	.formContainer a.new-button {
+		align-items: end;
+		grid-column: 1/-1;
+		font-family: "Raleway" sans-serif;
+		color: #fff !important;
+		width: 12ch;
+		height: 4ch;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		margin-bottom: 1.3em;
+	}
+
+	.formContainer a.new-button:hover {
+		border-radius: 3px;
+		text-shadow: 0 0 0.9px #f1f2f1;
+	}
+}

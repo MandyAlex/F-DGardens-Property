@@ -1,0 +1,133 @@
+/* .formContainer */
+:root {
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
+form > *{
+	border: solid blue;
+}
+/*  GRID BEGINS */
+@supports (display: grid) {
+	form.formContainer {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto minmax(5ch, auto) 2em) 3rem 2.5em;
+		grid-gap: 0.5em;
+	}
+}
+
+section.section.Two {
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
+	background: #018850;
+	/* background: linear-gradient(to top left, #7ec5aa, #b0e2cf); */
+	border: 2px solid blue;
+	opacity: 0.65;
+}
+
+#contactForm > * {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+section#contactForm.section {
+	padding: 2em 4em;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 300px;
+	height: auto;
+	border-radius: 10px;
+}
+
+section#contactForm h4 {
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	margin: 0;
+}
+
+form.formContainer {
+	height: auto;
+}
+
+label {
+	font-size: 1.3rem;
+	font-family: "Raleway";
+	font-weight: bold;
+	padding: 0.3rem 0 0.3em 0.5em;
+}
+
+
+
+/* input[type="text"],
+textarea {
+	color: black !important;
+	font-size: 1.2rem;
+	text-align: left;
+	padding: 0.3em 1em;
+	margin: 0;
+	border-radius: 3px;
+	border: 1px solid #126f4e;
+	resize: vertical;
+} */
+
+/* form.formContainer textarea{
+	padding: 1em 1.5em;
+	min-height: 4em;
+	overflow: hidden;
+} */
+
+form .error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.5rem;
+	color: red !important;
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+form .success {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: blue !important;
+	font-size: 0.6rem;
+	font-weight: bold;	
+}
+
+.submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black !important;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	background: transparent;
+	/* background: linear-gradient(#ffbc00 5%, #ffdd7f 100%); */
+	border: 2px solid #e5a900;
+	color: #813e3e;
+	font-weight: bold;
+	/* cursor: pointer; */
+	/* text-shadow: 0px 1px 0px #13506d; */
+	width: 45%;
+	height: 100%;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.button:hover{
+	transform: scale(1, 2);
+}
+
+/* .button{
+  grid-column: 1/-1;
+  border: 1px solid blue;
+} */
+
